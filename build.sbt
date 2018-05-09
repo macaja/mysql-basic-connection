@@ -59,6 +59,9 @@ lazy val root = (project in file(".")).
     name := "mysql-basic-connection",
     libraryDependencies ++= Seq(
       slick,
-      scalaTest % Test
+      slickHikaricp,
+      mysql,
+      scalaTest % Test,
+      slf4j
     )
   )
